@@ -28,6 +28,7 @@ jobs:
     - name: Run Tests
       env:
         DEBUG: "False"
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
         DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_db
         EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
         EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
