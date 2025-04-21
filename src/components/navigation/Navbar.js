@@ -211,14 +211,14 @@ function Navbar({
       <div className="relative z-20">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
-            <a href="#" className="flex">
+            <Link to="/" className="flex">
               <span className="sr-only">Workflow</span>
               <img
                 className="h-8 w-auto sm:h-10"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                 alt=""
               />
-            </a>
+            </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -306,9 +306,9 @@ function Navbar({
               <Link to="/shop" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Shop
               </Link>
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Docs
-              </a>
+              </Link>
               <Popover>
                 {({ open }) => (
                   <>
@@ -399,10 +399,10 @@ function Navbar({
                               </ul>
                             </div>
                             <div className="mt-6 text-sm font-medium">
-                              <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                              <Link to="/" className="text-indigo-600 hover:text-indigo-500">
                                 {' '}
                                 View all posts <span aria-hidden="true">&rarr;</span>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -467,39 +467,39 @@ function Navbar({
                     ))}
                   </div>
                   <div className="mt-8 text-base">
-                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                    <Link to="/" className="font-medium text-indigo-600 hover:text-indigo-500">
                       {' '}
                       View all products <span aria-hidden="true">&rarr;</span>
-                    </a>
+                    </Link>
                   </div>
                 </nav>
               </div>
             </div>
             <div className="py-6 px-5">
               <div className="grid grid-cols-2 gap-4">
-                <a href="#" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                   Pricing
-                </a>
+                </Link>
 
-                <a href="#" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                   Docs
-                </a>
+                </Link>
 
-                <a href="#" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                   Company
-                </a>
+                </Link>
 
-                <a href="#" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                   Resources
-                </a>
+                </Link>
 
-                <a href="#" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                   Blog
-                </a>
+                </Link>
 
-                <a href="#" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                   Contact Sales
-                </a>
+                </Link>
               </div>
               <div className="mt-6">
                 <a
@@ -510,9 +510,9 @@ function Navbar({
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                  <Link to="/" className="text-indigo-600 hover:text-indigo-500">
                     Sign in
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
