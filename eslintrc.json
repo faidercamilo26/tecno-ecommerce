@@ -1,0 +1,10 @@
+{
+    "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+    "rules": {
+      "no-unused-vars": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "jsx-a11y/anchor-is-valid": "off",
+      "jsx-a11y/alt-text": "off",
+      "no-script-url": "off"
+    }
+  }

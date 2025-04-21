@@ -2,7 +2,6 @@ import { useState } from "react"
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline"
 import { connect } from 'react-redux';
 import { get_search_products } from '../../redux/actions/products';
-import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function SearchBar({
@@ -11,7 +10,7 @@ function SearchBar({
   const [searchTerm, setSearchTerm] = useState("")
 
   const navigate = useNavigate();
-  const [redirect, setRedirect] = useState(false)
+  const [setRedirect] = useState(false)
 
   const handleSearch = (e) => {
     e.preventDefault()

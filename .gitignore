@@ -21,7 +21,6 @@ env/
 venv/
 *.pyc
 __pycache__/
-.env
 .env.prod
 
 npm-debug.log*
