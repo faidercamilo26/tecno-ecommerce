@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 18
 
-      - run: npm install
+      - run: npm ci
       - run: npm run build
 
       - name: Deploy to Railway
@@ -23,4 +23,3 @@ jobs:
         with:
           railway_token: ${{ secrets.RAILWAY_TOKEN }}
           service: "my-service"
-          
