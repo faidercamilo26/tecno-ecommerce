@@ -346,7 +346,7 @@ function Navbar({
                           <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">Company</h3>
-                              <ul role="list" className="mt-5 space-y-6">
+                              <ul className="mt-5 space-y-6">
                                 {company.map((item) => (
                                   <li key={item.name} className="flow-root">
                                     <a
@@ -362,7 +362,7 @@ function Navbar({
                             </div>
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">Resources</h3>
-                              <ul role="list" className="mt-5 space-y-6">
+                              <ul className="mt-5 space-y-6">
                                 {resources.map((item) => (
                                   <li key={item.name} className="flow-root">
                                     <a
@@ -382,7 +382,7 @@ function Navbar({
                               <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
                                 From the blog
                               </h3>
-                              <ul role="list" className="mt-6 space-y-6">
+                              <ul className="mt-6 space-y-6">
                                 {blogPosts.map((post) => (
                                   <li key={post.id} className="flow-root">
                                     <a href={post.href} className="-m-3 p-3 flex rounded-lg hover:bg-gray-100">
