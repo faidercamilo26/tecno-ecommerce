@@ -51,13 +51,13 @@ const ResetPasswordConfirm = ({
             <Layout>
               <main className="w-full flex">
                 <div className="relative flex-1 hidden items-center justify-center h-screen bg-gray-900 lg:flex">
-                  <img src="/images/ecommerce.png" alt="E-commerce" className="w-full h-full object-cover" />
+                  <img src="/static/images/ecommerce.png" alt="E-commerce" className="w-full h-full object-cover" />
                 </div>
         
                 <div className="flex-1 flex items-center justify-center h-screen -mt-20">
                   <div className="w-full max-w-md space-y-8 px-4 bg-white text-gray-600 sm:px-0">
                     <div className="flex flex-col items-center justify-center h-13">
-                      <img src="/images/logo.png" alt="Logo" width="300" className="mx-auto mb-2" />
+                      <img src="/static/images/logo.png" alt="Logo" width="300" className="mx-auto mb-2" />
                     </div>
                     <div className="">
                       <div className="mt-2 space-y-2">
