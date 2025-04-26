@@ -37,7 +37,7 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic',
+    'whitenoise.runserver_nostatic'
 ]
 
 PROJECT_APPS = ['apps.user', 'apps.product']
@@ -179,7 +179,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'build/images')
+    os.path.join(BASE_DIR, 'build/static')
 ]
 
 # Default primary key field type
