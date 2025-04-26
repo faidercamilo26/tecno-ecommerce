@@ -180,7 +180,7 @@ MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'build/static'),
-    os.path.join(BASE_DIR, 'build/static/images'),  # Agrega esta línea
+    os.path.join(BASE_DIR, 'build/static/images'), 
 ]
 
 # Default primary key field type

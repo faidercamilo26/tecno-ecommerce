@@ -134,7 +134,7 @@ const Signup = ({
         <Layout>
             <main className="w-full flex">
             <div className="relative flex-1 hidden items-center justify-center h-screen bg-gray-900 lg:flex">
-                <img src="/images/ecommerce.png" alt="E-commerce" className="w-full h-full object-cover" />
+                <img src="/static/images/ecommerce.png" alt="E-commerce" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 flex items-center justify-center h-screen">
                 <div className="w-full max-w-md space-y-8 px-4 bg-white text-gray-600 sm:px-0">
