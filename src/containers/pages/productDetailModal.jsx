@@ -35,7 +35,7 @@ const ProductDetailModal = ({
                   {/* Imagen del producto (lado izquierdo) */}
                   <div className="relative h-[400px] md:h-full bg-gray-100 rounded-l-xl overflow-hidden">
                     <img
-                      src={product.get_thumbnail}
+                      src={product.image_url}
                       alt={product.name}
                       fill
                       className="object-cover"

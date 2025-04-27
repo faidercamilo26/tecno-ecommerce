@@ -6,17 +6,14 @@ from imagekit.processors import ResizeToFit
 import io
 from django.core.files.base import ContentFile
 from PIL import Image, ImageOps
-from storages.backends.s3boto3 import S3Boto3Storage
-
 
 from django.conf import settings
-domain = settings.DOMAIN
+bucket_name = settings.AWS_STORAGE_BUCKET_NAME
+region = settings.AWS_S3_REGION_NAME
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
-    photo = models.FileField(
-        upload_to='products/',
-        storage=S3Boto3Storage(location='media'))
+    photo = models.ImageField(upload_to='photos/%Y/%m/')
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     compare_price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -24,11 +21,6 @@ class Product(models.Model):
     quantity = models.IntegerField(default=0)
     sold = models.IntegerField(default=0)
     date_created = models.DateTimeField(default=datetime.now)
-
-    def get_thumbnail(self):
-        if self.photo:
-            return domain + self.photo.url
-        return ''
     
     def save(self, *args, **kwargs):
         """Redimensiona la imagen manteniendo la relación de aspecto y agregando relleno si es necesario"""
