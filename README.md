@@ -10,7 +10,6 @@ Plataforma de ecommerce full-stack con arquitectura moderna y escalable, diseña
 - **Django REST Framework**: API RESTful con serializadores avanzados
 - **PostgreSQL**: Base de datos relacional para manejo transaccional
 - **Djoser**: Autenticación JWT profesional
-- **Redis**: Cache para optimización de rendimiento (si aplica)
 
 ### Frontend
 - **React 18**: Componentes funcionales con hooks
@@ -29,13 +28,11 @@ Plataforma de ecommerce full-stack con arquitectura moderna y escalable, diseña
 - Sistema de autenticación con JWT y refresh tokens
 - Catálogo de productos con búsqueda y filtrado
 - Carrito de compras con persistencia en Redux
-- Pasarela de pagos integrada (ej. Stripe/PayPal)
 - Panel de administración Django personalizado
-- Test suite con >80% de cobertura
 
 ## 🚀 Deployment
 La aplicación utiliza:
 - Configuración 12-factor para entornos cloud
-- Buildpack de Python y Node.js para Heroku
+- Buildpack de Python y Node.js para Railway
 - Optimización de estáticos con WhiteNoise
 - Auto-escalado configurable
