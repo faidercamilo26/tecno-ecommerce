@@ -6,13 +6,17 @@ from imagekit.processors import ResizeToFit
 import io
 from django.core.files.base import ContentFile
 from PIL import Image, ImageOps
+from storages.backends.s3boto3 import S3Boto3Storage
+
 
 from django.conf import settings
 domain = settings.DOMAIN
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
-    photo = models.ImageField(upload_to='photos/%Y/%m/')
+    photo = models.FileField(
+        upload_to='products/',
+        storage=S3Boto3Storage(location='media'))
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     compare_price = models.DecimalField(max_digits=6, decimal_places=2)
