@@ -123,6 +123,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://tecno-eccomerce-production.up.railway.app'
 ]
 
+
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True
 
