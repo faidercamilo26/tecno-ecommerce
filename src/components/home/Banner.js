@@ -1,97 +1,96 @@
 import { Link } from "react-router-dom"
 
 export default function Example() {
-    return (
-      <div className="relative bg-white overflow-hidden">
-        <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
-            <div className="sm:max-w-lg">
-              <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-                Engineered to Outsmart, Outperform, Outlast
-              </h1>
-              <p className="mt-4 text-xl text-gray-500">
+  return (
+    <div className="relative bg-white">
+      <div className="pt-12 pb-20 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
+          <div className="sm:max-w-2xl lg:max-w-lg">
+            <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
+              Engineered to Outsmart, Outperform, Outlast
+            </h1>
+            <p className="mt-3 text-base text-gray-500 sm:text-lg md:mt-4 md:text-xl">
               In a world where lag kills innovation and vulnerabilities cost empires, our arsenal of cutting-edge tech isn’t just gear—it’s survival. Dominate code, crush benchmarks, and lockdown your domain with tools forged for those who refuse to bend.
-              </p>
-            </div>
-            <div>
-              <div className="mt-10">
-                {/* Decorative image grid */}
-                <div
-                  aria-hidden="true"
-                  className="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"
-                >
-                  <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                    <div className="flex items-center space-x-6 lg:space-x-8">
-                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
-                          <img
-                            src="/static/images/imagen8-banner.jpeg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/static/images/imagen2-banner.jpeg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
+            </p>
+          </div>
+          <div>
+            <div className="mt-8 sm:mt-10">
+              {/* Decorative image grid */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"
+              >
+                <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                  <div className="flex items-center space-x-6 lg:space-x-8">
+                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
+                        <img
+                          src="/static/images/imagen8-banner.jpeg"
+                          alt=""
+                          className="w-full h-full object-center object-cover"
+                        />
                       </div>
-                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/static/images/imagen3-banner.jpeg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/static/images/imagen1-banner.jpeg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/static/images/imagen5-banner.jpeg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <img
+                          src="/static/images/imagen2-banner.jpeg"
+                          alt=""
+                          className="w-full h-full object-center object-cover"
+                        />
                       </div>
-                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/static/images/imagen6-banner.jpeg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/static/images/imagen7-banner.jpeg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
+                    </div>
+                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <img
+                          src="/static/images/imagen3-banner.jpeg"
+                          alt=""
+                          className="w-full h-full object-center object-cover"
+                        />
+                      </div>
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <img
+                          src="/static/images/imagen1-banner.jpeg"
+                          alt=""
+                          className="w-full h-full object-center object-cover"
+                        />
+                      </div>
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <img
+                          src="/static/images/imagen5-banner.jpeg"
+                          alt=""
+                          className="w-full h-full object-center object-cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <img
+                          src="/static/images/imagen6-banner.jpeg"
+                          alt=""
+                          className="w-full h-full object-center object-cover"
+                        />
+                      </div>
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <img
+                          src="/static/images/imagen7-banner.jpeg"
+                          alt=""
+                          className="w-full h-full object-center object-cover"
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
-  
-                <Link
-                  to="/shop"
-                  className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-indigo-700"
-                >
-                  Get access at shop
-                </Link>
               </div>
+
+              <Link
+                to="/shop"
+                className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-2 px-6 text-sm font-medium text-white hover:bg-indigo-700 sm:py-3 sm:px-8 sm:text-base"
+              >
+                Get access at shop
+              </Link>
             </div>
           </div>
         </div>
       </div>
-    )
-  }
-  
+    </div>
+  )
+}
