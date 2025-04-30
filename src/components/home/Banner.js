@@ -13,81 +13,87 @@ export default function Banner() {
               In a world where lag kills innovation and vulnerabilities cost empires, our arsenal of cutting-edge tech isn’t just gear—it’s survival. Dominate code, crush benchmarks, and lockdown your domain with tools forged for those who refuse to bend.
             </p>
           </div>
-          <div>
-            <div className="mt-8 sm:mt-10">
-              {/* Decorative image grid */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"
-              >
-                <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                  <div className="flex items-center space-x-6 lg:space-x-8">
-                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
-                        <img
-                          src="/static/images/imagen8-banner.jpeg"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="/static/images/imagen2-banner.jpeg"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
+          
+          <div className="mt-8 sm:mt-10">
+            {/* Contenedor de imágenes responsive */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"
+            >
+              <div className="lg:absolute lg:transform lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:space-x-6">
+                  {/* Columna 1 */}
+                  <div className="flex justify-center space-x-4 sm:space-x-6 lg:block lg:space-x-0">
+                    <div className="w-32 h-48 sm:w-44 sm:h-64 rounded-lg overflow-hidden lg:mb-6">
+                      <img
+                        src="/static/images/imagen8-banner.jpeg"
+                        alt=""
+                        className="w-full h-full object-center object-cover"
+                      />
                     </div>
-                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="/static/images/imagen3-banner.jpeg"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="/static/images/imagen1-banner.jpeg"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="/static/images/imagen5-banner.jpeg"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
+                    <div className="w-32 h-48 sm:w-44 sm:h-64 rounded-lg overflow-hidden lg:block">
+                      <img
+                        src="/static/images/imagen2-banner.jpeg"
+                        alt=""
+                        className="w-full h-full object-center object-cover"
+                      />
                     </div>
-                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="/static/images/imagen6-banner.jpeg"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="/static/images/imagen7-banner.jpeg"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
+                  </div>
+                  
+                  {/* Columna 2 */}
+                  <div className="flex justify-center space-x-4 sm:space-x-6 lg:block lg:space-x-0">
+                    <div className="w-32 h-48 sm:w-44 sm:h-64 rounded-lg overflow-hidden lg:mb-6">
+                      <img
+                        src="/static/images/imagen3-banner.jpeg"
+                        alt=""
+                        className="w-full h-full object-center object-cover"
+                      />
+                    </div>
+                    <div className="w-32 h-48 sm:w-44 sm:h-64 rounded-lg overflow-hidden lg:mb-6">
+                      <img
+                        src="/static/images/imagen1-banner.jpeg"
+                        alt=""
+                        className="w-full h-full object-center object-cover"
+                      />
+                    </div>
+                    <div className="w-32 h-48 sm:w-44 sm:h-64 rounded-lg overflow-hidden">
+                      <img
+                        src="/static/images/imagen5-banner.jpeg"
+                        alt=""
+                        className="w-full h-full object-center object-cover"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Columna 3 */}
+                  <div className="flex justify-center space-x-4 sm:space-x-6 lg:block lg:space-x-0">
+                    <div className="w-32 h-48 sm:w-44 sm:h-64 rounded-lg overflow-hidden lg:mb-6">
+                      <img
+                        src="/static/images/imagen6-banner.jpeg"
+                        alt=""
+                        className="w-full h-full object-center object-cover"
+                      />
+                    </div>
+                    <div className="w-32 h-48 sm:w-44 sm:h-64 rounded-lg overflow-hidden">
+                      <img
+                        src="/static/images/imagen7-banner.jpeg"
+                        alt=""
+                        className="w-full h-full object-center object-cover"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-
+            </div>
+            <div className="sm: flex sm:justify-center">
               <Link
                 to="/shop"
-                className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-2 px-6 text-sm font-medium text-white hover:bg-indigo-700 sm:py-3 sm:px-8 sm:text-base"
+                className="sm:w-80 inline-block text-center bg-indigo-600 border border-transparent rounded-md py-2 px-6 text-sm font-medium text-white hover:bg-indigo-700 sm:py-3 sm:px-8 sm:text-base sm:flex sm:justify-center sm:mt-10"
               >
                 Get access at shop
               </Link>
             </div>
+            
           </div>
         </div>
       </div>
