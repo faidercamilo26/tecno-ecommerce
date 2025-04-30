@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function Example() {
+export default function Banner() {
     return (
       <div className="relative bg-white overflow-hidden">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
@@ -14,7 +14,7 @@ export default function Example() {
               </p>
             </div>
             <div>
-              <div className="mt-10">
+              <div className="mt-5">
                 {/* Decorative image grid */}
                 <div
                   aria-hidden="true"

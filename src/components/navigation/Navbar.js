@@ -31,29 +31,11 @@ import SearchBar  from '../utils/SearchBar'
 
 const solutions = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: ChartBarIcon,
-  },
-  {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: CursorArrowRaysIcon, // Cambiado de CursorClickIcon
-  },
-  { 
-    name: 'Security', 
-    description: "Your customers' data will be safe and secure.", 
-    href: '#', 
-    icon: ShieldCheckIcon 
-  },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: Squares2X2Icon, // Cambiado de ViewGridIcon
-  },
+    name: 'Shop',
+    description: 'View all shop',
+    href: '/shop',
+    icon: CursorArrowRaysIcon, 
+  }
 ]
 
 const company = [
@@ -292,54 +274,8 @@ function Navbar({
                       </a>
                     ))}
                   </div>
-                  <div className="mt-8 text-base">
-                    <Link to="/" className="font-medium text-indigo-600 hover:text-indigo-500">
-                      {' '}
-                      View all products <span aria-hidden="true">&rarr;</span>
-                    </Link>
-                  </div>
+                  
                 </nav>
-              </div>
-            </div>
-            <div className="py-6 px-5">
-              <div className="grid grid-cols-2 gap-4">
-                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricing
-                </Link>
-
-                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
-                </Link>
-
-                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                  Company
-                </Link>
-
-                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                  Resources
-                </Link>
-
-                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                  Blog
-                </Link>
-
-                <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                  Contact Sales
-                </Link>
-              </div>
-              <div className="mt-6">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <Link to="/" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
-                  </Link>
-                </p>
               </div>
             </div>
           </div>
