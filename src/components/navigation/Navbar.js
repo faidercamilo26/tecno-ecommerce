@@ -8,13 +8,12 @@ import { logout } from '../../redux/actions/auth'
 import { useLocation } from 'react-router-dom';
 
 import {
-  CursorArrowRaysIcon,
+  ShoppingBagIcon,
   Bars3Icon,
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import SearchBar  from '../utils/SearchBar'
 
 const solutions = [
@@ -22,7 +21,7 @@ const solutions = [
     name: 'Shop',
     description: 'View all shop',
     href: '/shop',
-    icon: CursorArrowRaysIcon, 
+    icon: ShoppingBagIcon, 
   },
   {
     name: 'Sign Up',
