@@ -85,14 +85,15 @@ export default function Banner() {
                 </div>
               </div>
             </div>
-            <div className="sm: flex sm:justify-center">
+            <div className="flex justify-center sm:justify-start"> 
               <Link
-                to="/shop"
-                className="sm:w-80 inline-block text-center bg-indigo-600 border border-transparent rounded-md py-2 px-6 text-sm font-medium text-white hover:bg-indigo-700 sm:py-3 sm:px-8 sm:text-base sm:flex sm:justify-center sm:mt-10"
-              >
-                Get access at shop
-              </Link>
+                  to="/shop"
+                  className="w-60 inline-block text-center bg-indigo-600 border border-transparent rounded-md py-2 px-6 text-sm font-medium text-white hover:bg-indigo-700 sm:text-base flex justify-center mt-10"
+                >
+                  Get access at shop
+                </Link>
             </div>
+              
             
           </div>
         </div>

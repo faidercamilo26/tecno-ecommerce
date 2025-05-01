@@ -8,22 +8,10 @@ import { logout } from '../../redux/actions/auth'
 import { useLocation } from 'react-router-dom';
 
 import {
-  BookmarkSquareIcon,
-  BriefcaseIcon,
-  ChartBarIcon,
-  CheckCircleIcon,
   CursorArrowRaysIcon,
-  ComputerDesktopIcon,
-  GlobeAmericasIcon,
-  InformationCircleIcon,
   Bars3Icon,
-  NewspaperIcon,
-  BuildingOfficeIcon,
-  PhoneIcon,
-  PlayIcon,
-  ShieldCheckIcon,
-  UserGroupIcon,
-  Squares2X2Icon,
+  ArrowRightOnRectangleIcon,
+  UserPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
@@ -35,48 +23,19 @@ const solutions = [
     description: 'View all shop',
     href: '/shop',
     icon: CursorArrowRaysIcon, 
+  },
+  {
+    name: 'Sign Up',
+    description: 'Create a new account',
+    href: '/signup',
+    icon: UserPlusIcon,
+  },
+  {
+    name: 'Sign In',
+    description: 'Access your account',
+    href: '/signin',
+    icon: ArrowRightOnRectangleIcon,
   }
-]
-
-const company = [
-  { name: 'About', href: '#', icon: InformationCircleIcon },
-  { name: 'Customers', href: '#', icon: BuildingOfficeIcon }, // Cambiado de OfficeBuildingIcon
-  { name: 'Press', href: '#', icon: NewspaperIcon },
-  { name: 'Careers', href: '#', icon: BriefcaseIcon },
-  { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
-]
-
-const resources = [
-  { name: 'Community', href: '#', icon: UserGroupIcon },
-  { name: 'Partners', href: '#', icon: GlobeAmericasIcon }, // Cambiado de GlobeAltIcon
-  { name: 'Guides', href: '#', icon: BookmarkSquareIcon }, // Cambiado de BookmarkAltIcon
-  { name: 'Webinars', href: '#', icon: ComputerDesktopIcon }, // Cambiado de DesktopComputerIcon
-]
-
-// callsToAction y blogPosts permanecen igual (sus iconos no cambiaron nombre)
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'View All Products', href: '#', icon: CheckCircleIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-]
-
-const blogPosts = [
-  {
-    id: 1,
-    name: 'Boost your conversion rate',
-    href: '#',
-    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
-  },
-  {
-    id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
-    href: '#',
-    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80',
-  },
 ]
 
 function classNames(...classes) {
@@ -243,15 +202,8 @@ function Navbar({
         >
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5 sm:pb-8">
-              <div className="flex items-center justify-between">
-                <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
-                </div>
-                <div className="-mr-2">
+              <div className="flex items-end justify-end">
+                <div className="flex -mr-2 justify-end">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
