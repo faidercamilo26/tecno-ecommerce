@@ -33,7 +33,7 @@ const solutions = [
   {
     name: 'Sign In',
     description: 'Access your account',
-    href: '/signin',
+    href: '/login',
     icon: ArrowRightOnRectangleIcon,
   }
 ]
