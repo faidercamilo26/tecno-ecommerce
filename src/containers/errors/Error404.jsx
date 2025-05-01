@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 
 const Error404 = () => {
-    return(
         <Layout>
             return (
                 <main>
@@ -31,7 +30,6 @@ const Error404 = () => {
                 </main>
             )
         </Layout>
-    )
 }
 
 export default Error404;
