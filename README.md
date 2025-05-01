@@ -20,7 +20,7 @@ Plataforma de ecommerce full-stack con arquitectura moderna y escalable, diseña
 
 ### DevOps
 - **GitHub Actions**: CI/CD con despliegues automáticos
-- **Heroku**: Deployment en cloud profesional
+- **Railway**: Deployment en cloud profesional
 - **PostgreSQL**: Database as a Service
 - **Environment Variables**: Gestión segura de configuraciones
 
@@ -32,7 +32,6 @@ Plataforma de ecommerce full-stack con arquitectura moderna y escalable, diseña
 
 ## 🚀 Deployment
 La aplicación utiliza:
-- Configuración 12-factor para entornos cloud
 - Buildpack de Python y Node.js para Railway
 - Optimización de estáticos con WhiteNoise
 - Auto-escalado configurable
